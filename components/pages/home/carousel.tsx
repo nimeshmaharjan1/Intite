@@ -5,7 +5,9 @@ import SimpleImageSlider from 'react-simple-image-slider';
 const Carousel = () => {
     const images = [
         { url: '/assets/carousel/jp_HP_Mockup_CW3722_Wupdate_int.jpg' },
-        { url: '/assets/carousel/de-at_HP_HeroBanner_CW4222_HeidiAndLeniCampaign_2ndUpdate_int.jpg' },
+        {
+            url: 'https://www.intimissimi.com/on/demandware.static/-/Library-Sites-IntimissimiContentLibrary/default/dw82bc210f/images/us_HP_HeroBanner_CW4322_LoyaltyOnlyFriendsAndFamily20Off_int.jpg',
+        },
     ];
     const [DeviceWidth, setDeviceWidth] = React.useState(0);
     const [DeviceHeight, setDeviceHeight] = React.useState(0);
@@ -17,16 +19,15 @@ const Carousel = () => {
             setDeviceHeight(window.innerHeight);
         });
     }, []);
-    console.log(DeviceWidth);
     return (
         <SimpleImageSlider
-            width={DeviceWidth > 1440 ? DeviceWidth - 5 : DeviceWidth}
+            width={DeviceWidth > 1440 ? DeviceWidth - 19 : DeviceWidth}
             height={DeviceWidth <= 426 ? 400 : '90vh'}
             images={images}
             showBullets={false}
             showNavs={false}
-            autoPlay={DeviceWidth <= 426 ? false : true}
-            autoPlayDelay={8}
+            autoPlay={true}
+            autoPlayDelay={2}
         />
     );
 };

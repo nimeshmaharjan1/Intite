@@ -7,12 +7,7 @@ const SubHeader = () => {
     return (
         <header className={`sub-header wrapper border-b-[1px] ${resolvedTheme === 'luxury' ? 'border-b-zinc-800' : 'border-b-zinc-200'} `}>
             <nav className="container px-6 md:px-32  flex items-center justify-between">
-                <Link
-                    href="/"
-                    className={`h-12 text-[13px] font-[500]  border-transparent transition-all border-b-2 flex items-center justify-center ${
-                        resolvedTheme === 'luxury' ? 'hover:border-white' : 'hover:border-orange-300'
-                    }`}
-                >
+                <Link href="/" className={`h-12 text-[13px] font-[500] flex items-center justify-center`}>
                     New Arrivals
                 </Link>
                 <Link href="/" className={`h-12 text-[13px] font-[500] flex items-center justify-center`}>
@@ -23,9 +18,6 @@ const SubHeader = () => {
                 </Link>
                 <Link href="/" className={`h-12 text-[13px] font-[500] flex items-center justify-center`}>
                     Lingerie
-                </Link>
-                <Link href="/" className={`h-12 text-[13px] font-[500] flex items-center justify-center`}>
-                    Pyjamas
                 </Link>
                 <Link href="/" className={`h-12 text-[13px] font-[500] flex items-center justify-center`}>
                     Collections

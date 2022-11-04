@@ -1,6 +1,7 @@
 import { NextPage } from 'next';
 import type { AppProps } from 'next/app';
-import '../styles/globals.css';
+import '../styles/globals.scss';
+import '../styles/slider.scss';
 
 import { store } from '@store/index';
 import { Provider } from 'react-redux';
@@ -9,6 +10,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import { Session } from 'next-auth';
 import { SessionProvider as AuthProvider } from 'next-auth/react';
 import { ThemeProvider } from 'next-themes';
+
+import '@splidejs/react-splide/css/skyblue';
 
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
     getLayout?: (page: React.ReactElement) => React.ReactNode;

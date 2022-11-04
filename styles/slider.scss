@@ -1,0 +1,8 @@
+.slider {
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    img {
+        height: 400px;
+    }
+}
