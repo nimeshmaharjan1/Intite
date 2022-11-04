@@ -24,7 +24,7 @@ const Carousel = () => {
     if (!isMounted) return null;
     return (
         <SimpleImageSlider
-            width={DeviceWidth > 1440 ? DeviceWidth - 19 : DeviceWidth}
+            width={DeviceWidth > 1440 ? DeviceWidth : DeviceWidth}
             height={DeviceWidth <= 426 ? 400 : '90vh'}
             images={images}
             showBullets={false}

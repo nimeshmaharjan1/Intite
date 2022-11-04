@@ -14,7 +14,6 @@ const ThemeToggler: React.FC = () => {
 
     useEffect(() => {
         setIsMounted(true);
-        console.log({ theme });
         setTheme(theme === 'system' ? (systemTheme as string) : (theme as string));
     }, [theme, systemTheme, setTheme]);
 

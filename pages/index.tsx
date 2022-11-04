@@ -72,7 +72,7 @@ const Home: NextPageWithLayout = () => {
                     </SplideSlide>
                 </Splide>
             </section>
-            <div className="flex flex-col md:flex-row lg:min-h-[80vh] px-6 md:px-24 gap-4 lg:gap-0 md:gap-4 justify-center md:justify-around container items-center pb-0 md:pb-6 pt-6 lg:pt-0 mt-3 sm:mt-0">
+            <div className="flex flex-col md:flex-row lg:min-h-[100vh] px-6 md:px-24 gap-4 lg:gap-0 md:gap-4 justify-center md:justify-around container items-center pb-0 md:pb-6 pt-6 lg:pt-0 mt-3 sm:mt-0">
                 <div className="bras relative cursor-pointer scale-100 hover:scale-105 transition-all">
                     <span className="absolute top-2/4 left-2/4 font-bold text-2xl  text-white">Bras</span>
                     <Image
