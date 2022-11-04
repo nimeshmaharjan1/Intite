@@ -100,7 +100,7 @@ const Home: NextPageWithLayout = () => {
                 } flex flex-col justify-center py-6 gap-4 items-center`}
             >
                 <h2 className="text-center text-xl font-sans">You may also like</h2>
-                <div className="px-12 pb-6">
+                <div className="pb-6">
                     <Splide
                         options={{
                             pagination: false,
@@ -119,6 +119,7 @@ const Home: NextPageWithLayout = () => {
                                 },
                                 426: {
                                     perPage: 2,
+                                    gap: 12,
                                 },
                             },
                         }}

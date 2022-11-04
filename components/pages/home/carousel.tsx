@@ -11,7 +11,9 @@ const Carousel = () => {
     ];
     const [DeviceWidth, setDeviceWidth] = React.useState(0);
     const [DeviceHeight, setDeviceHeight] = React.useState(0);
+    const [isMounted, setIsMounted] = React.useState(false);
     React.useEffect(() => {
+        setIsMounted(true);
         setDeviceWidth(window.innerWidth);
         setDeviceHeight(window.innerHeight);
         window.addEventListener('resize', () => {
@@ -19,6 +21,7 @@ const Carousel = () => {
             setDeviceHeight(window.innerHeight);
         });
     }, []);
+    if (!isMounted) return null;
     return (
         <SimpleImageSlider
             width={DeviceWidth > 1440 ? DeviceWidth - 19 : DeviceWidth}
